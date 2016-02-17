@@ -7,7 +7,7 @@ class tx_multishop_payment_method extends mslib_payment {
 			$amount=(preg_replace("/^0/", '', round($order['total_amount'], 2))*100);
 			$ordernumber=time();
 			$transaction_id=mslib_fe::createPaymentTransactionId($order['orders_id'], 'quickpay', $order['payment_method'], 'manual', $ordernumber);
-			$protocol='4';
+			$protocol='10';
 			$msgtype='authorize';
 			$merchant=$vars['merchant_id'];
 			$language='en';
@@ -17,7 +17,7 @@ class tx_multishop_payment_method extends mslib_payment {
 			$cancelurl=$ref->FULL_HTTP_URL.mslib_fe::typolink('', 'tx_multishop_pi1[page_section]=psp_cancelurl');
 			$callbackurl=$vars['callback_url']; # see http://quickpay.dk/clients/callback-quickpay.php.txt
 			$autocapture='0';
-			$md5secret=$vars['md5_secret'];
+			//$md5secret=$vars['md5_secret'];
 			$group='11111'; //add subscription to this group
 			$splitpayment='0'; //should splitpayment be enabled on transaction, can be 0 => disabled, 1 => enabled
 			$md5check=md5($protocol.$msgtype.$merchant.$language.$ordernumber.$amount.$currency.$continueurl.$cancelurl.$callbackurl.$autocapture.$group.$splitpayment.$md5secret);
@@ -112,4 +112,6 @@ class tx_multishop_payment_method extends mslib_payment {
 		return $content;
 	}
 }
+
+
 ?>
