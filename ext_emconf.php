@@ -35,7 +35,11 @@ $EM_CONF[$_EXTKEY]=array(
 		'conflicts'=>array(),
 		'suggests'=>array(),
 	),
+<<<<<<< HEAD
 	'_md5_values_when_last_written'=>'a:6:{s:34:"class.multishop_payment_method.php";s:4:"4e80";s:28:"class.multishop_quickpay10.php";s:4:"9910";s:12:"ext_icon.gif";s:4:"1bdc";s:17:"ext_localconf.php";s:4:"7c9b";s:14:"ext_tables.sql";s:4:"1f5c";s:10:"README.txt";s:4:"ee2d";}',
+=======
+	'_md5_values_when_last_written'=>'a:6:{s:34:"class.multishop_payment_method.php";s:4:"4e80";s:30:"class.multishop_quickpay10.php";s:4:"9910";s:12:"ext_icon.gif";s:4:"1bdc";s:17:"ext_localconf.php";s:4:"7c9b";s:14:"ext_tables.sql";s:4:"1f5c";s:10:"README.txt";s:4:"ee2d";}',
+>>>>>>> refs/remotes/origin/master
 	'suggests'=>array(),
 );
 
