@@ -40,10 +40,17 @@ class tx_multishop_payment_method extends mslib_payment {
 					'merchant_id'                  => $qp_merchant_id,
 					'order_id'                     => $transaction_id,
 					'payment_methods'              => $qp_cardtypelock,
+<<<<<<< HEAD
+					'product_id'                   => $qp_product_id,
+					'category'                     => $qp_category,
+					'reference_title'              => $qp_reference_title,
+					'vat_amount'                   => $qp_vat_amount,
+=======
 					//'product_id'                   => $qp_product_id,
 					//'category'                     => $qp_category,
 					//'reference_title'              => $qp_reference_title,
 					//'vat_amount'                   => $qp_vat_amount,
+>>>>>>> refs/remotes/origin/master
 					'subscription'                 => $subscription,
 					'version'                      => 'v10'
 						);
